@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoo"
+        android:label="QuikWash"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PROJEK_MASSIVE"
+        tools:targetApi="31">
+        <activity
+            android:name=".Profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".history.Struk"
+            android:exported="false" />
+        <activity
+            android:name=".history.History1"
+            android:exported="false" />
+        <activity
+            android:name=".history.History"
+            android:exported="false" />
+        <activity
+            android:name=".pembayaran.NomorAntrian"
+            android:exported="false" />
+        <activity
+            android:name=".pembayaran.Paymentsukses"
+            android:exported="false" />
+        <activity
+            android:name=".pembayaran.Pembayarandana"
+            android:exported="false" />
+        <activity
+            android:name=".kategori.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".history.Halamanuatama"
+            android:exported="false" />
+        <activity
+            android:name=".home.Home"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword.NoHp"
+            android:exported="false" />
+        <activity
+            android:name=".pembayaran.eMoney"
+            android:exported="false" />
+        <activity
+            android:name=".booking.FormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".booking.Booking"
+            android:exported="false" />
+        <activity
+            android:name=".booking.Kalender"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB9sQ7PDBv17exuKHNNRO3Rk0U2Dje2fJQ" />
+
+        <activity
+            android:name=".login.Splasshscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kategori.Kategori1"
+            android:exported="false" />
+        <activity
+            android:name=".kategori.Categorise"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword.Notifikasisukses"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword.usernamenew"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword.Otp"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword.Notificasionriset"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword.Forgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".login.Login"
+            android:exported="false" />
+        <activity
+            android:name=".login.Notifikasilogin"
+            android:exported="false" />
+        <activity
+            android:name=".register.Register"
+            android:exported="false" />
+        <activity
+            android:name=".tracking.Tracking"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

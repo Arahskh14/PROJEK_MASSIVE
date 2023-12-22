@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/empat"
+        android:title="Home"
+        android:drawablePadding="8dp"/>
+    <item
+        android:id="@+id/categorise"
+        android:title="Kategori"
+        android:drawablePadding="8dp"
+        android:icon="@drawable/tiga"/>
+    <item
+        android:id="@+id/history"
+        android:title="History"
+        android:drawablePadding="8dp"
+        android:icon="@drawable/dua"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:drawablePadding="8dp"
+        android:icon="@drawable/satu"/>
+
+</menu>

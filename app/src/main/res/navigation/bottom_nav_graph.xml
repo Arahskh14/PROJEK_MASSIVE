@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/home">
+    <activity
+        android:id="@+id/home"
+        android:name="com.example.projek_massive.home.Home"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/categorise"
+        android:name="com.example.projek_massive.kategori.Categorise"
+        android:label="activity_categorise"
+        tools:layout="@layout/activity_categorise" />
+    <activity
+        android:id="@+id/history"
+        android:name="com.example.projek_massive.history.History"
+        android:label="activity_history"
+        tools:layout="@layout/activity_history" />
+    <activity
+        android:id="@+id/profile"
+        android:name="com.example.projek_massive.Profile.Profile"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+</navigation>

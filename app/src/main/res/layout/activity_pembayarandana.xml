@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pembayaran.Pembayarandana">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:layout_marginTop="-55dp"
+        android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Metode Pembayaran"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Dompet Digital"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLabelNomorTujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Tujuan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <EditText
+        android:id="@+id/editTextNomorTujuan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Masukkan Nomor Tujuan"
+        android:inputType="phone"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintTop_toBottomOf="@id/textLabelNomorTujuan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textLabelAtasNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atas Nama"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNomorTujuan"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextAtasNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Masukkan Atas Nama"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintTop_toBottomOf="@id/textLabelAtasNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textLabelNominalTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominal Transfer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextAtasNama"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextNominalTransfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Masukkan Nominal Transfer"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintTop_toBottomOf="@id/textLabelNominalTransfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textLabelCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catatan / Pesan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNominalTransfer"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextCatatan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Masukkan Catatan atau Pesan"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintTop_toBottomOf="@id/textLabelCatatan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:background="@drawable/background_btn"
+        android:paddingStart="6dp"
+        android:text="Bayar Sekarang"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCatatan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
